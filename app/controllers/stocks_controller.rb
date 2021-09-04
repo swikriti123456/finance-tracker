@@ -10,7 +10,7 @@ class StocksController < ApplicationController
 				
 			else
 				respond_to do |format|
-					flash.now[:alert] = "please enter vaid symbol"
+					flash.now[:alert] = "please enter valid symbol"
 					format.js {render partial: 'users/result'}
 				end
 				
